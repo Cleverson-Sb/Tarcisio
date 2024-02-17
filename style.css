@@ -1,0 +1,385 @@
+@charset "URF-8";
+
+@font-face {
+    font-family: 'TheNextFont';
+    src: url('Fontes/TheNextFont.ttf') format('truetype');
+}
+
+:root {
+    --cor0: #EEFF00;
+    --cor1: #63663D;
+    --cor2: #ffffff;
+    --cor3: #323329;
+
+    --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
+    --fonte-destaque: 'Source Serif Pro', serif;
+    --fonte-sub: 'Barlow Semi Condensed', sans-serif;
+}
+
+*{
+    margin: 0px;
+    padding: 0px; 
+    color: black;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body::-webkit-scrollbar{
+    display: none;
+}
+
+p{
+    text-indent: 20px;
+}
+
+hr{
+    max-width: 700px;
+}
+
+header{
+    position: fixed;
+    background-color: var(--cor3);
+    width: 100vw;
+    padding: 10px;
+    box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.452);
+    z-index: 2;
+}
+
+#secaoImagemFundo{
+    height: 200px;
+
+}
+
+    #imagemFundo{
+        background-image: url(imagens/planosdefundo/1.png);
+        background-position:  bottom right;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 200px;
+        width: 100vw;
+    }
+
+#secaoHistoria{
+    width: 100vw;
+    height: 600px;
+    background-color: #ffffff;
+    background-image: url(imagens/planosdefundo/6.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+    #conteinerHistoria{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        background-color: transparent;
+    }
+
+    #fundoTitulo{
+        display: flex;
+        margin: auto;
+        background-color: transparent;
+        justify-content: center;
+        align-items: center;
+    }
+
+        #titulo01{
+            background-position: center;
+            background-size: contain;
+            background-repeat: no-repeat;
+            font-family: 'TheNextFont';
+            color: #EEFF00;
+            font-size: 3em;
+            font-weight: bold;
+            text-align: center;
+            margin-bottom: 20px;
+            text-shadow: 0px 0px 20px #00000080;
+        }
+
+        #artigo01{
+            width: 45%;
+            background-color: transparent;
+        }
+
+
+            #textoHistoria{
+                width: 80%;
+                font-family: var(--fonte-padrao);
+                color: black;
+                text-align: justify;
+                font-size: 1.3em;
+                padding: 10px;
+                background-color: #ffffffe8;
+                border-radius: 10px;
+            }
+
+        #artigo02{
+            width: 25%;
+            background-color: transparent;
+            background-image: url(imagens/2f7ba8d0-81a8-43fa-a8c1-b07005d182bd.jpg);
+            background-position: center;
+            background-size: contain;
+            background-repeat: no-repeat;
+            height: 400px;
+        }
+
+#secaoPalestras{
+    background-color: #63663D;
+    height: 500px;
+    padding-top: 20px;
+}
+
+        .quadro{
+            display: flex;
+            margin: auto;
+            width: 82vw;
+            max-width: 710px;
+            height: 410px;
+            background-image: linear-gradient(to right bottom, var(--cor2) 55%, var(--cor0));
+            border-radius: 7px;
+            box-shadow: 5px 6px 20px rgba(255, 255, 255, 0.075);
+            animation: fadeBottonQuadro 2s;
+        }
+
+        @keyframes fadeBottonQuadro{
+            0%{
+                opacity: 0;
+                transform: translateY(50px);
+            }
+            100%{
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+            .banner{
+                width: 100%;
+                height: 400px;
+                justify-content: center;
+                align-items: center;
+                margin-top: 5px;
+                display: flex;
+                animation: fadeBottonBanner 1.25s;
+            }
+
+        @keyframes fadeBottonBanner{
+            0%{
+                opacity: 0;
+                transform: translateY(25px);
+            }
+            100%{
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    
+                .slider{
+                    width: 80vw;
+                    max-width: 700px;
+                    height: 400px;
+                    overflow: hidden;
+                    position: absolute;
+                    border-radius: 7px;
+                }
+            
+                    .slides{
+                        display: flex;
+                    }
+                    
+            .navigation-bar{
+                position: absolute;
+                bottom: 20px;
+                display: flex;
+                left: 50%;
+                transform: translate(-50%);
+            }
+                    
+            input{
+                display: none;
+            }
+                    
+            .manual-btn{
+                border: 2px solid var(--cor0);
+                padding: 10px;
+                border-radius: 20px;
+                cursor: pointer;
+            }
+                    
+            .manual-btn:not(:last-child){
+                margin-right: 40px;
+            }
+                    
+                .slides{
+                    display: flex;
+                    width: 400%;
+                    height: 100%;
+                }
+                
+                    .slide{
+                        width: 25%;
+                        transition: 2s;
+                    }
+                
+                        .slide img{
+                            width: 100%;
+                            height: 100%;
+                        }
+
+                            div#slide0{
+                                background-position: bottom right;
+                                background-size: 100% auto;
+                                background-repeat: no-repeat;
+                                background-attachment: local;
+                                background-image: url(imagens/Colégio\ Integral.jpg);
+                            }
+
+                            div#slide1{
+                                background-image: url(imagens/Joaquim\ Nabuco\ 1.jpg);
+                                background-color: var(--cor1);
+                                background-position: top center;
+                                background-size: cover;
+                                background-repeat: no-repeat;
+                                background-attachment: local;
+                            }
+
+                            div#slide2{
+                                background-image: url(imagens/DSCF2687.JPG);
+                                background-color: var(--cor1);
+                                background-position: center;
+                                background-size: 100% auto;
+                                background-repeat: no-repeat;
+                                background-attachment: local;
+                            }
+
+                            div#slide3{
+                                background-image: url(imagens/11232426_831262753618841_508422977_o.jpg);
+                                background-color: var(--cor1);
+                                background-position: center center;
+                                background-size: cover;
+                                background-repeat: no-repeat;
+                                background-attachment: local;
+                            }
+
+                #radio1:checked ~ .frist{
+                    margin-left: 0;
+                }
+                
+                #radio2:checked ~ .frist{
+                    margin-left: -25%;
+                }
+                
+                #radio3:checked ~ .frist{
+                    margin-left: -50%;
+                }
+                
+                #radio4:checked ~ .frist{
+                    margin-left: -75%;
+                }
+
+                .navigation-auto{
+                    position: absolute;
+                    width: 100%;
+                    margin-top: 456px;
+                    display: flex;
+                    justify-content: center;
+                }
+
+                    .navigation-auto div{
+                        border: 2px solid var(--cor0);
+                        padding: 10px;
+                        border-radius: 20px;
+                        cursor: pointer;
+                        transition: 1s;
+                    }
+
+                .navigation-auto div:not(:last-child){
+                    margin-right: 40px;
+                }
+
+                #radio1:checked ~ .navigation-auto .auto-btn1{
+                    background-color: var(--cor0);
+                }
+
+                #radio2:checked ~ .navigation-auto .auto-btn2{
+                    background-color: var(--cor0);
+                }
+
+                #radio3:checked ~ .navigation-auto .auto-btn3{
+                    background-color: var(--cor0);
+                }
+
+                #radio4:checked ~ .navigation-auto .auto-btn4{
+                    background-color: var(--cor0);
+                }
+    
+    #vejaMaisConteiner{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        margin: 20px;
+    }
+
+        #vejaMais{
+        background-color: #EEFF00;
+        border: none;
+        color: black;
+        font-family: 'TheNextFont';
+        font-weight: normal;
+        font-size: 1.8em;
+        border-radius: 5px;
+        padding: 5px;
+        box-shadow: 0px 0px 20px 2px #000000c7;
+        }
+
+#secaoCursos{
+    width: 100vw;
+    height: 600px;
+    background-color: #ffffff;
+    background-image: url(imagens/planosdefundo/5.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+    #conteinerCursos{
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+        align-items: center;
+        padding-top: 50px;
+    }
+
+        #curso1{
+            display: flex;
+            flex-wrap: nowrap;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+#banner1{
+    width: 40vw;
+    height: 400px;
+    background-color: #323329;
+}
+
+    #curso2{
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+#banner2{
+    width: 40vw;
+    height: 400px;
+    background-color: #63663D;
+}
