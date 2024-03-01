@@ -365,10 +365,12 @@ header{
         }
 
 #banner1{
-    width: 40vw;
+    width: 30vw;
     height: 400px;
     background-color: #323329;
     background-image: url(imagens/planosdefundo/Banner1.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
     #curso2{
@@ -383,4 +385,7 @@ header{
     width: 40vw;
     height: 400px;
     background-color: #63663D;
+    background-image: url(imagens/planosdefundo/Banner2.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
