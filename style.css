@@ -47,8 +47,8 @@ header{
 }
 
 #secaoImagemFundo{
-    height: 200px;
-
+    padding-top: 20px;
+    height: 300px;
 }
 
     #imagemFundo{
@@ -56,7 +56,7 @@ header{
         background-position:  center;
         background-size: cover;
         background-repeat: no-repeat;
-        height: 200px;
+        height: 300px;
         width: 100vw;
     }
 
