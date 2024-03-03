@@ -52,8 +52,8 @@ header{
 }
 
     #imagemFundo{
-        background-image: url(imagens/planosdefundo/1.png);
-        background-position:  bottom right;
+        background-image: url(imagens/apresentação/1-2.jpeg);
+        background-position:  center;
         background-size: cover;
         background-repeat: no-repeat;
         height: 200px;
@@ -61,6 +61,7 @@ header{
     }
 
 #secaoHistoria{
+    padding-top: 50px;
     width: 100vw;
     height: 600px;
     background-color: #ffffff;
@@ -121,7 +122,7 @@ header{
         #artigo02{
             width: 25%;
             background-color: transparent;
-            background-image: url(imagens/2f7ba8d0-81a8-43fa-a8c1-b07005d182bd.jpg);
+            background-image: url(imagens/apresentação/2.jpeg);
             background-position: center;
             background-size: contain;
             background-repeat: no-repeat;
@@ -129,10 +130,28 @@ header{
         }
 
 #secaoPalestras{
+    background-image: url(imagens/planosdefundo/10.jpeg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
     background-color: #63663D;
-    height: 500px;
+    height: 700px;
     padding-top: 20px;
 }
+
+    #titulo02{
+        padding: 20px;
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        font-family: 'TheNextFont';
+        color: #EEFF00;
+        font-size: 3em;
+        font-weight: bold;
+        text-align: center;
+        margin-bottom: 20px;
+        text-shadow: 0px 0px 20px #00000080;
+        }
 
         .quadro{
             display: flex;
@@ -235,11 +254,11 @@ header{
                                 background-size: 100% auto;
                                 background-repeat: no-repeat;
                                 background-attachment: local;
-                                background-image: url(imagens/Colégio\ Integral.jpg);
+                                background-image: url(imagens/apresentação/3.jpeg);
                             }
 
                             div#slide1{
-                                background-image: url(imagens/Joaquim\ Nabuco\ 1.jpg);
+                                background-image: url(imagens/apresentação/5.jpeg);
                                 background-color: var(--cor1);
                                 background-position: top center;
                                 background-size: cover;
@@ -248,7 +267,7 @@ header{
                             }
 
                             div#slide2{
-                                background-image: url(imagens/DSCF2687.JPG);
+                                background-image: url(imagens/apresentação/4.jpeg);
                                 background-color: var(--cor1);
                                 background-position: center;
                                 background-size: 100% auto;
@@ -257,7 +276,7 @@ header{
                             }
 
                             div#slide3{
-                                background-image: url(imagens/11232426_831262753618841_508422977_o.jpg);
+                                background-image: url(imagens/apresentação/7.jpeg);
                                 background-color: var(--cor1);
                                 background-position: center center;
                                 background-size: cover;
