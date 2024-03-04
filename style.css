@@ -48,15 +48,15 @@ header{
 
 #secaoImagemFundo{
     padding-top: 20px;
-    height: 300px;
+    height: 200px;
 }
 
     #imagemFundo{
-        background-image: url(imagens/apresentação/1-2.jpeg);
+        background-image: url(imagens/apresentação/1-4.png);
         background-position:  center;
         background-size: cover;
         background-repeat: no-repeat;
-        height: 300px;
+        height: 200px;
         width: 100vw;
     }
 
