@@ -54,7 +54,7 @@ header{
     #imagemFundo{
         background-image: url(imagens/apresentação/1-4.png);
         background-position:  center;
-        background-size: cover;
+        background-size: auto;
         background-repeat: no-repeat;
         height: 200px;
         width: 100vw;
