@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Tema Corporativo</title>
+    <script>
+        window.onload = function(){
+            window.scrollTo(0,150)
+        }
+    </script>
+</head>
+<body>
+    <header>
+
+    </header>
+    <main>
+        <section id="secaoImagemFundo">
+            <div id="imagemFundo"></div>
+        </section>
+       
+            <section id="secaoHistoria">
+                <div id="fundoTitulo">
+                    <h1 id="titulo01">Nossa Historia</h1>
+                </div>
+                <div id="conteinerHistoria">
+                <div id="artigo01">
+                    
+                        <p id="textoHistoria">O Tema Corporativo surgiu em março de 2015 com a criação de um canal no Youtube. Idealizado por Hilma Carolina, profissional de Recursos Humanos e Tarcísio Mendes profissional atuante na logística, o intuito era compartilhar conteúdos práticos e úteis dessas duas áreas. Com o sucesso dos vídeos, por ter abordagem prática do ambiente corporativo, diversas palestras foram realizadas por convite das principais faculdades do Grande Recife. Atualmente o Tema Corporativo se tornou uma empresa de cursos online (ao vivo e gravados), treinamentos in company e desde jul/2023 oferecendo serviços de consultoria em logística. 
+                            Já são mais de 5 mil profissionais capacitados, com grande destaque para o curso Analista de Logística, lançado em fev/2021 e passou da marca de 3.200 inscritos. Sejam todos muito bem vindos ao site do Tema Corporativo e participe dos nossos grupos no whatsapp, uma oportunidade perfeita para ampliar networking, juntando-se aos mais de 1900 membros nos grupos.</p>
+                    
+                </div>
+                <div id="artigo02">
+                </div>
+            </section>
+        </div>
+        <div>
+            <section id="secaoPalestras">
+
+                <h1 id="titulo02">PALESTRAS</h1>
+
+                <div class="quadro">
+                    <div class="banner">
+                    <div class="slider">
+
+                        <div class="slides">
+                
+                            <input type="radio" name="radio-btn" id="radio1">
+                            <input type="radio" name="radio-btn" id="radio2">
+                            <input type="radio" name="radio-btn" id="radio3">
+                            <input type="radio" name="radio-btn" id="radio4">
+                
+                            <div class="slide frist" id="slide0">
+                            </div>
+                
+                            <div class="slide" id="slide1">
+                            </div>
+                
+                            <div class="slide" id="slide2">
+                            </div>
+                
+                            <div class="slide" id="slide3">
+                            </div>
+                            
+                            <div class="navigation-auto">
+                                <div class="auto-btn1"></div>
+                                <div class="auto-btn2"></div>
+                                <div class="auto-btn3"></div>
+                                <div class="auto-btn4"></div>
+                            </div>    
+                            
+                        </div>
+                
+                    </div>
+                </div>
+                <script src="js/banner.js"></script>
+            </div>
+
+                <div id="vejaMaisConteiner">    
+                    <button id="vejaMais" type="button" onclick="Mudar('conteinerPalestra')">VEJA MAIS</button>
+                    <script>
+                        function Mudar(el) {
+                            var display = document.getElementById(el).style.display;
+                            if(display == "flex")
+                                document.getElementById(el).style.display = 'none';
+                            else
+                                document.getElementById(el).style.display = 'flex';
+                            
+                        }
+                    </script>
+                </div>
+
+                <div id="conteinerPalestra">
+
+                    <div class="palestras" id="palestra1">
+                        <h2>teste</h2>
+                        <div class="bannerPalestra" id="bannerPalestra1"></div>
+                        <p class="textoPalestra">1º Encontro de Logística do Tema Corporativo</p>
+                    </div>
+
+                    <div class="palestras" id="palestra2">
+                        <h2>teste</h2>
+                        <div class="bannerPalestra" id="bannerPalestra2"></div>
+                        <p class="textoPalestra">Reunião com o Secretário de Desenvolvimento Econômico de Igarassu</p>
+                    </div>
+
+                    <div class="palestras" id="palestra3">
+                        <h2>teste</h2>
+                        <div class="bannerPalestra" id="bannerPalestra3"></div>
+                        <p class="textoPalestra">2º Encontro de Logística do Tema Corporativo</p>
+                    </div>
+
+                    <div class="palestras" id="palestra4">
+                        <h2>teste</h2>
+                        <div class="bannerPalestra" id="bannerPalestra4"></div>
+                        <p class="textoPalestra">Mini Curso de Oratória ministrado por Tarcísio Mendes</p>
+                    </div>
+
+                </div>
+
+            </section>
+        </div>
+        <section id="secaoCursos">
+                <h1 id="titulo03">CONFIRA NOSSAS CURSOS</h1>
+                <div id="conteinerCursos">
+                    <div id="curso1">
+                        <div id="banner1"></div>
+                        <div id="textoBanner1">
+                            <p>Nesse curso você vai ter acesso há um conteúdo com foco em operações com WMS cronologicamente estruturado para te dar conhecimento desde as ações relevantes para implantação, passando pelas rotinas de recebimento, armazenagem, controle de estoque, separação, conferência e embarque dos pedidos.</p>
+                            <br>
+                            <p>Essa é uma oportunidade para você entender toda a lógica do WMS o que te permitirá ampliar seu conhecimento na logística. Não deixe de visualizar as abas Conteúdo e Detalhes que estão logo abaixo. Lá você tem mais informações do que existe de conteúdo em cada um dos módulos.</p>
+                        </div>
+                        <div><button><a href="https://hotmart.com/pt-br/marketplace/produtos/operacoes-com-wms-gngx2/L70063455D?sck=HOTMART_SITE&search=cb31037c-057c-48d8-9191-6cfa2f8f4f02&hotfeature=33" target="_blank">CONFIRA JÁ!!!</a></button></div>
+                    </div>
+                    <div id="curso2">
+                        <div id="banner2"></div>
+                        <div id="textoBanner2">
+                            <p>No formato ao vivo, foram lançadas 4 turmas totalizando 112 alunos participantes em 2021. Ao final de cada turma fizemos pesquisa de satisfação e a avaliação média foi de 96% de satisfação com os conteúdos e com as abordagens. No formato online já são mais de 3.300 alunos desde o lançamento em fev/2021 e boa parte desses logísticos estão participando do grupo exclusivo no WhatsApp onde a interação sobre assuntos da área tem sido bastante produtivo. Você poderá participar também através do link disponível na primeira aula.</p>
+                            <br>
+                            <p>O último módulo, chamado Conteúdos Extras, Tarcísio Mendes, instrutor do curso iniciou em julho/23 a postar conteúdos exclusivos para alunos do curso que são importantes sobre a área de logística, como as visitas ao porto de Suape e mais recentemente a visita feita a 8 empresas em Fortaleza que aconteceu em jan/24. Uma forma de manter os logísticos atualizados e tendo acesso a conteúdos que efetivamente contribuem com o crescimento na área.</p>
+                        </div>
+                        <div><button><a href="https://hotmart.com/pt-br/marketplace/produtos/analista-de-logistica/V48401467T?sck=HOTMART_SITE&search=38e2463c-3e11-4ef4-ae0c-c5ad9682be7a&hotfeature=33" target="_blank">CONFIRA JÁ!!!</a></button></div>
+                    </div>
+                </div>
+            </section>
+    </main>
+    <footer>
+        <div></div>
+    </footer>
+</body>
+</html>
