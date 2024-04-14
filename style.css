@@ -25,6 +25,10 @@ html{
     scroll-behavior: smooth;
 }
 
+body{
+    position: relative;
+}
+
 body::-webkit-scrollbar{
     display: none;
 }
@@ -38,7 +42,8 @@ hr{
 }
 
 header{
-    position: fixed;
+    position: sticky;
+    top: 0%;
     background-color: black;
     width: 100vw;
     padding: 10px;
@@ -85,24 +90,11 @@ header{
                 text-decoration: none;
                 color: var(--cor2);
                 position: relative;
-              }  
+              } 
 
-#secaoImagemFundo{
-    padding-top: 20px;
-    height: 200px;
-}
-
-    #imagemFundo{
-        background-image: url(imagens/apresentação/Design\ sem\ nome.png);
-        background-position: center;
-        background-size: auto;
-        background-repeat: no-repeat;
-        height: 200px;
-        width: 100vw;
-    }
 
 #secaoHistoria{
-    padding-top: 50px;
+    padding-top: 80px;
     width: 100vw;
     min-height: 600px;
     background-color: #ffffff;
@@ -498,6 +490,7 @@ header{
         }
 
             #banner1{
+                min-width: 198px;
                 width: 396px;
                 height: 396px;
                 background-color: #323329;
@@ -548,55 +541,3 @@ header{
                 background-color: #323329d4;
                 text-align: justify;
             }
-
-@media only screen and (max-width:1080px) {
-    #imagemFundo{
-        background-image: url(imagens/apresentação/1-2.jpeg);
-        background-position: center;
-        background-size: cover;
-        background-repeat: no-repeat;
-        height: 200px;
-        width: 100vw;
-    }
-}
-        
-@media only screen and (max-width:760px) {
-    #secaoImagemFundo{
-        padding-top: 20px;
-        height: 100px;
-    }
-    #imagemFundo{
-        background-image: url(imagens/apresentação/1-2.jpeg);
-        background-position: center center;
-        background-size: cover;
-        background-repeat: no-repeat;
-        height: 100px;
-        width: 100vw;
-    }
-    #artigo02{
-        display: none;
-        width: 25%;
-        background-color: transparent;
-        background-image: url(imagens/apresentação/2.jpeg);
-        background-position: center;
-        background-size: contain;
-        background-repeat: no-repeat;
-        height: 400px;
-    }
-    #artigo01{
-        width: 90%;
-        background-color: transparent;
-    }
-    #textoHistoria{
-        width: 94%;
-        font-family: var(--fonte-padrao);
-        color: black;
-        text-align: justify;
-        font-size: 1em;
-        padding: 10px;
-        margin-bottom: 10px;
-        background-color: #ffffffdc;
-        border-radius: 10px;
-    }
-
-}
