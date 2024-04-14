@@ -39,14 +39,53 @@ hr{
 
 header{
     position: fixed;
-    background-color: var(--cor3);
+    background-color: black;
     width: 100vw;
     padding: 10px;
     box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.452);
     z-index: 2;
 }
 
+    #conteinerMenu{
+        width: 85%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+    }
+        #logo{
+            width: 15%;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;  
+        }
 
+            #logo img{
+                width: 60px;
+                cursor: pointer;
+            }
+
+        #menu {
+            margin: 0px;
+            padding: 0px;
+        }
+
+            #nav{
+                margin: 0px;
+                padding: 0px;
+            }
+
+              a{
+                font-family: var(--fonte-sub);
+                width: 50%;
+                margin: auto;
+                font-size: 1.1em;
+                padding-right: 50px;
+                text-decoration: none;
+                color: var(--cor2);
+                position: relative;
+              }  
 
 #secaoImagemFundo{
     padding-top: 20px;
@@ -443,7 +482,7 @@ header{
 
     #conteinerCursos{
         display: flex;
-        flex-wrap: nowrap;
+        flex-wrap: wrap;
         justify-content: space-around;
         align-items: baseline;
         margin-top: 15px;
@@ -545,15 +584,15 @@ header{
         height: 400px;
     }
     #artigo01{
-        width: 75%;
+        width: 90%;
         background-color: transparent;
     }
     #textoHistoria{
-        width: 96%;
+        width: 94%;
         font-family: var(--fonte-padrao);
         color: black;
         text-align: justify;
-        font-size: 1.3em;
+        font-size: 1em;
         padding: 10px;
         margin-bottom: 10px;
         background-color: #ffffffdc;
