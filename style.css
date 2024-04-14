@@ -522,12 +522,16 @@ header{
 }
         
 @media only screen and (max-width:760px) {
+    #secaoImagemFundo{
+        padding-top: 20px;
+        height: 100px;
+    }
     #imagemFundo{
-        background-image: url(imagens/apresentação/1.jpeg);
-        background-position: center;
+        background-image: url(imagens/apresentação/1-2.jpeg);
+        background-position: center center;
         background-size: cover;
         background-repeat: no-repeat;
-        height: 200px;
+        height: 100px;
         width: 100vw;
     }
     #artigo02{
