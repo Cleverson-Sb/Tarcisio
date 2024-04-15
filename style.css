@@ -541,3 +541,19 @@ header{
                 background-color: #323329d4;
                 text-align: justify;
             }
+
+            .botaoBanner{
+                outline: none;
+                border: none;
+                background-color: var(--cor0);
+                padding: 10px 0px;
+                border-radius: 5px;
+            }
+
+            .botaoBanner a{
+                color: var(--cor3);
+                font-family: var(--fonte-destaque);
+                font-size: 1.1em;
+                font-weight: bold;
+                text-align: center;
+            }
