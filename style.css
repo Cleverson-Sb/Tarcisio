@@ -486,7 +486,8 @@ header{
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            width: 50vw;
+            width: 49vw;
+            margin: 4px;
         }
 
             #banner1{
@@ -518,7 +519,8 @@ header{
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        width: 50vw;
+        width: 49vw;
+        margin: 4px;
     }
 
         #banner2{
