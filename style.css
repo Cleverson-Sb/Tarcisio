@@ -81,7 +81,7 @@ header{
                 padding: 0px;
             }
 
-              a{
+              #nav a{
                 font-family: var(--fonte-sub);
                 width: 50%;
                 margin: auto;
@@ -136,13 +136,14 @@ header{
         }
 
         #artigo01{
-            width: 45%;
+            width: 59vw;
+            margin: 3px;
             background-color: transparent;
         }
 
 
             #textoHistoria{
-                width: 80%;
+                width: 95%;
                 font-family: var(--fonte-padrao);
                 color: black;
                 text-align: justify;
@@ -154,7 +155,8 @@ header{
             }
 
         #artigo02{
-            width: 25%;
+            width: 40vw;
+            margin: 3px;
             background-color: transparent;
             background-image: url(imagens/apresentação/2.jpeg);
             background-position: center;
@@ -548,8 +550,8 @@ header{
                 outline: none;
                 border: none;
                 background-color: var(--cor0);
-                padding: 10px 0px;
                 border-radius: 5px;
+                padding: 8px;
             }
 
             .botaoBanner a{
@@ -558,4 +560,6 @@ header{
                 font-size: 1.1em;
                 font-weight: bold;
                 text-align: center;
+                text-decoration: none;
+
             }
